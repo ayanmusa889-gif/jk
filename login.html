@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task Tracker | Login</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Login </h1>
-      <form action="">
-
-         <div class="form-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
             <label for="username">Username</label>
-            <input type="text" id="username" name="username"/>
+            <input type="text" id="username" name="username" required>
 
-        </div>
-        <div class="form-co">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" />
-</div>
-      <button class="btn">Login</button>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
 
-      </form>
-     
+            <input type="submit" value="Login">
+        </form>
     </div>
-
-    <script src="script.js"></script>
-  </body>
+    <link rel="stylesheet" href="style.css">
+           <script src="script.js"></script>
+</body>
 </html>
